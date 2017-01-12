@@ -20,7 +20,8 @@ MYSQL* doConnect(void*) {
 	mysql_options(tmp, MYSQL_SET_CHARSET_NAME, "utf8");
 	return tmp;
 }
-void doDisconnect(void*,MYSQL* conn) {
+void doDisconnect(void*,MYSQL* conn) 
+{
 	mysql_close(conn);
 }
 #endif
